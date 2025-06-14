@@ -1,4 +1,4 @@
-const employees = [
+const initialEmployeesData = [
   { id: 1, name: "Carolynn McGinlay" },
   { id: 2, name: "Lodovico Filon" },
   { id: 3, name: "Jefferey Wahlberg" },
@@ -10,6 +10,10 @@ const employees = [
   { id: 9, name: "Verile Bondesen" },
   { id: 10, name: "Gwen Grollmann" },
 ];
+
+let employees = [...initialEmployeesData];
+
+export default employees;
 
 export function getEmployees() {
   return employees;
